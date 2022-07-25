@@ -7,9 +7,27 @@ const Contact = () => {
       <div className='section-center'>
         <h3>Join our newsletter and get 20% off</h3>
         <div className='content'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut obcaecati
-          quos amet veniam? Corrupti vero reiciendis molestiae, autem quis
-          maxime.
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+            obcaecati quos amet veniam? Corrupti vero reiciendis molestiae,
+            autem quis maxime.
+          </p>
+          <form
+            className='contact-form'
+            action='https://formspree.io/f/xvolewyl'
+            method='POST'
+          >
+            <input
+              type='email'
+              name='email'
+              className='form-input'
+              placeholder='enter email'
+              name='_replyto'
+            />
+            <button type='submit' className='submit-btn'>
+              subscribe
+            </button>
+          </form>
         </div>
       </div>
     </Wrapper>

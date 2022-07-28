@@ -6,4 +6,13 @@ export const formatPrice = (number) => {
   return newNumber
 }
 
-export const getUniqueValues = () => {}
+export const getUniqueValues = (data, type) => {
+  if (!data) {
+    return []
+  }
+  let unique = data.map((item) => item[type])
+  if (type === 'colors') {
+    unique = unique.flat()
+  }
+  return ['all', ...new Set(unique)]
+}
